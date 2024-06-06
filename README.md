@@ -1,2 +1,2 @@
-# sab
-Website do SinesAcademia de Basquetebol
+# Sines Academia de Basquetebol
+Website do SAB
