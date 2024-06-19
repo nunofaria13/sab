@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const btn = document.getElementById('preInscricaoBtn');
-    const img = document.getElementById('profileImg');
+    const profileImg = document.getElementById('profileImg');
+    const floatingImg = document.getElementById('floatingImg');
 
-    // Adiciona efeito de hover no botão
+    // Efeito de hover no botão
     btn.addEventListener('mouseover', function() {
         btn.style.transform = 'scale(1.1)';
         btn.style.backgroundColor = '#0056b3'; // Cor de fundo mais escura
@@ -21,12 +22,31 @@ document.addEventListener('DOMContentLoaded', function() {
         btn.style.transform = 'scale(1.1)';
     });
 
-    // Adiciona efeito de hover na imagem
-    img.addEventListener('mouseover', function() {
-        img.style.transform = 'rotate(3deg)';
+    // Efeito de hover na imagem do perfil
+    profileImg.addEventListener('mouseover', function() {
+        profileImg.style.transform = 'rotate(5deg)';
     });
 
-    img.addEventListener('mouseout', function() {
-        img.style.transform = 'rotate(0deg)';
+    profileImg.addEventListener('mouseout', function() {
+        profileImg.style.transform = 'rotate(0deg)';
     });
+
+    // Função para fazer a imagem flutuar
+    let position = 0;
+    let direction = 1;
+    const floatSpeed = 0.1; // Velocidade da flutuação
+    const floatRange = 10; // Distância da flutuação
+
+    function floatImage() {
+        position += direction * floatSpeed;
+        floatingImg.style.transform = `translateY(${position}px)`;
+
+        if (position >= floatRange || position <= -floatRange) {
+            direction *= -1;
+        }
+
+        requestAnimationFrame(floatImage);
+    }
+
+    floatImage(); // Inicia a animação
 });
