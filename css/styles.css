@@ -11758,3 +11758,8 @@ html {
   visibility: visible;
   transform: scaleX(1);
 }
+
+
+.btn {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
