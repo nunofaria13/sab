@@ -1,41 +1,24 @@
-/*!
-* Start Bootstrap - Personal v1.0.1 (https://startbootstrap.com/template-overviews/personal)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-personal/blob/master/LICENSE)
-*/
-// This file is intentionally blank
-// Use this file to add JavaScript to your project
+// Animação botão
+document.addEventListener('DOMContentLoaded', function() {
+    const btn = document.getElementById('preInscricaoBtn');
 
-const axios = require('axios');
-const cheerio = require('cheerio');
+    // Adiciona efeito de hover
+    btn.addEventListener('mouseover', function() {
+        btn.style.transform = 'scale(1.1)';
+        btn.style.backgroundColor = '#1826C2'; // Cor de fundo mais escura
+    });
 
-const url = 'https://www.fpb.pt/calendario/clube_3488/?clube=3488&epoca=2023/2024&';
+    btn.addEventListener('mouseout', function() {
+        btn.style.transform = 'scale(1)';
+        btn.style.backgroundColor = ''; // Reseta para a cor original
+    });
 
-async function extrairDados() {
-    try {
-        const { data } = await axios.get(url);
-        const $ = cheerio.load(data);
+    // Adiciona efeito de clique
+    btn.addEventListener('mousedown', function() {
+        btn.style.transform = 'scale(0.9)';
+    });
 
-        const jogos = [];
-        $('.table_class tr').each((index, element) => {
-            const colunas = $(element).find('td');
-            if (colunas.length) {
-                const jogo = {
-                    data: $(colunas[0]).text().trim(),
-                    hora: $(colunas[1]).text().trim(),
-                    equipa_casa: $(colunas[2]).text().trim(),
-                    equipa_fora: $(colunas[3]).text().trim(),
-                    resultado: $(colunas[4]).text().trim()
-                };
-                jogos.push(jogo);
-            }
-        });
-
-        return jogos;
-    } catch (error) {
-        console.error(`Falha ao acessar a página: ${error}`);
-        return [];
-    }
-}
-
-module.exports = extrairDados;
+    btn.addEventListener('mouseup', function() {
+        btn.style.transform = 'scale(1.1)';
+    });
+});
