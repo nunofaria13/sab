@@ -599,7 +599,7 @@ progress {
 
 
 .img-fluid {
-    height: 350px; /* Defina a altura desejada */
+    height: 250px; /* Defina a altura desejada */
     object-fit: cover; /* Mantém a proporção e cobre o elemento pai */
 }
 
