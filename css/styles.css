@@ -599,10 +599,26 @@ progress {
 
 
 .img-fluid {
-    max-width: 100%; /* Largura máxima igual a 100% do contêiner pai */
-    height: auto; /* Altura ajustada automaticamente para manter a proporção */
-    object-fit: contain; /* Garante que a imagem se ajuste ao contêiner sem ser cortada */
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
+
+.card-body {
+    display: flex;
+    align-items: center;
+}
+
+.card-body > div {
+    flex: 1;
+}
+
+.card-body img {
+    flex-shrink: 0;
+    width: 50%; /* Ajuste esta largura conforme necessário */
+    height: auto;
+}
+
 
 
 .img-thumbnail {
