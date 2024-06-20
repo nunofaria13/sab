@@ -599,9 +599,11 @@ progress {
 
 
 .img-fluid {
-    height: 250px; /* Defina a altura desejada */
-    object-fit: cover; /* Mantém a proporção e cobre o elemento pai */
+    max-width: 100%; /* Largura máxima igual a 100% do contêiner pai */
+    height: auto; /* Altura ajustada automaticamente para manter a proporção */
+    object-fit: contain; /* Garante que a imagem se ajuste ao contêiner sem ser cortada */
 }
+
 
 .img-thumbnail {
   padding: 0.25rem;
