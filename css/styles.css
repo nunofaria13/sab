@@ -91,6 +91,15 @@
   }
 }
 
+@media (max-width: 768px) {
+            .card-body {
+                flex-direction: column;
+            }
+            .image-container {
+                width: 100%;
+            }
+        }
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
