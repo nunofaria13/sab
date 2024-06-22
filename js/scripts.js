@@ -50,3 +50,79 @@ document.addEventListener('DOMContentLoaded', function() {
 
     floatImage(); // Inicia a animação
 });
+
+
+
+
+const images = [
+    "assets/jogo7.jpg",
+    "assets/Jogo1.jpg",
+    "assets/Jogo2.jpg",
+    "assets/Jogo3.jpg",
+    "assets/Jogo4.jpg",
+    "assets/Jogo5.jpg",
+    "assets/Jogo6.jpg",
+    "assets/Jogo8.jpg",
+    "assets/Jogador1.jpg",
+    "assets/Jogador2.jpg",
+    "assets/Jogador3.jpg",
+    "assets/Jogador4.jpg",
+    "assets/Jogador5.jpg",
+    "assets/Jogador6.jpg",
+    "assets/Jogador7.jpg",
+    "assets/Jogador8.jpg",
+    "assets/Jogador9.jpg",
+    "assets/Jogador10.jpg",
+    "assets/Jogador11.jpg",
+    "assets/Jogador12.jpg",
+    "assets/Jogador13.jpg",
+    "assets/Jogador14.jpg",
+    
+];
+
+let currentIndex = 0;
+
+function showImage(index) {
+    const galleryContainer = document.querySelector('.gallery-container');
+    if (index >= images.length) {
+        currentIndex = 0;
+    } else if (index < 0) {
+        currentIndex = images.length - 1;
+    } else {
+        currentIndex = index;
+    }
+
+    // Limpar o container antes de adicionar a nova imagem
+    galleryContainer.innerHTML = '';
+
+    images.forEach((src, i) => {
+        const imgElement = document.createElement('div');
+        imgElement.classList.add('gallery-item');
+        if (i === currentIndex) {
+            imgElement.innerHTML = `<img src="${src}" alt="Foto ${i + 1}">`;
+        } else {
+            imgElement.innerHTML = `<img src="${src}" alt="Foto ${i + 1}" style="opacity: 0;">`;
+        }
+        galleryContainer.appendChild(imgElement);
+    });
+
+    galleryContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+function nextImage() {
+    showImage(currentIndex + 1);
+}
+
+function prevImage() {
+    showImage(currentIndex - 1);
+}
+
+// Inicializar a galeria com a primeira imagem
+document.addEventListener('DOMContentLoaded', () => {
+    showImage(currentIndex);
+});
+
+
+
+
+
