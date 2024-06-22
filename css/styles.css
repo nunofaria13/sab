@@ -11800,3 +11800,71 @@ html {
   width: auto;
   margin-right: 10px;
 }
+
+
+
+
+/* Gallery Styles */
+.gallery {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.gallery-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gallery-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  user-select: none;
+  z-index: 10;
+}
+
+.gallery-nav.prev {
+  left: 10px;
+}
+
+.gallery-nav.next {
+  right: 10px;
+}
+
+.gallery-nav:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.gallery-nav:focus {
+  outline: none;
+}
+
+
+
