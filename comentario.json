@@ -11,7 +11,59 @@
                 "name": "Maria Oliveira",
                 "comment": "Gostei muito das novas táticas!",
                 "timestamp": "2024-06-21T10:30:00Z"
+            },
+
+            {
+                "name": "João Santos",
+                "comment": "Excelente trabalho da equipa!",
+                "timestamp": "2024-06-22T15:45:00Z"
+            },
+            {
+                "name": "Ana Pereira",
+                "comment": "As melhorias foram notáveis.",
+                "timestamp": "2024-06-21T18:20:00Z"
+            },
+            {
+                "name": "Carlos Mendes",
+                "comment": "Estou impressionado com a eficiência.",
+                "timestamp": "2024-06-20T08:15:00Z"
+            },
+            {
+                "name": "Beatriz Santos",
+                "comment": "As novas estratégias são muito eficazes.",
+                "timestamp": "2024-06-19T12:30:00Z"
+            },
+            {
+                "name": "Rui Costa",
+                "comment": "Parabéns pela inovação!",
+                "timestamp": "2024-06-18T14:50:00Z"
+            },
+            {
+                "name": "Sofia Martins",
+                "comment": "Gostei da abordagem moderna.",
+                "timestamp": "2024-06-17T09:10:00Z"
+            },
+            {
+                "name": "Pedro Gomes",
+                "comment": "Muito bom, continuem assim!",
+                "timestamp": "2024-06-16T16:05:00Z"
+            },
+            {
+                "name": "Luisa Fernandes",
+                "comment": "Adorei as mudanças implementadas.",
+                "timestamp": "2024-06-15T11:40:00Z"
+            },
+            {
+                "name": "Miguel Rodrigues",
+                "comment": "As novas táticas são fenomenais!",
+                "timestamp": "2024-06-14T17:30:00Z"
+            },
+            {
+                "name": "Laura Almeida",
+                "comment": "Incrível como melhoraram o desempenho.",
+                "timestamp": "2024-06-13T13:55:00Z"
             }
+            
     ]
 
 }
