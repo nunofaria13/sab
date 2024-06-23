@@ -136,7 +136,7 @@ const comentariosPorPagina = 2;
 
 // Função para carregar comentários de um arquivo JSON
 function carregarComentarios() {
-    fetch('comentarios.json')
+    fetch('comentario.json')
         .then(response => response.json())
         .then(data => {
             comentarios = data.sort((a, b) => new Date(b.data) - new Date(a.data));
