@@ -1,26 +1,65 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const btn = document.getElementById('preInscricaoBtn');
-    const profileImg = document.getElementById('profileImg');
-    const floatingImg = document.getElementById('floatingImg');
+    const youtubeBtn = document.getElementById('youtubeBtn');
+    const instagramBtn = document.getElementById('instagramBtn');
+    const facebookBtn = document.getElementById('facebookBtn');
 
-    // Efeito de hover no botão
-    btn.addEventListener('mouseover', function() {
-        btn.style.transform = 'scale(1.1)';
-        btn.style.backgroundColor = '#0056b3'; // Cor de fundo mais escura
+    // Efeito de hover no botão do YouTube
+    youtubeBtn.addEventListener('mouseover', function() {
+        youtubeBtn.style.transform = 'scale(1.1)';
+        youtubeBtn.style.backgroundColor = '#0056b3'; // Cor de fundo mais escura
     });
 
-    btn.addEventListener('mouseout', function() {
-        btn.style.transform = 'scale(1)';
-        btn.style.backgroundColor = ''; // Reseta para a cor original
+    youtubeBtn.addEventListener('mouseout', function() {
+        youtubeBtn.style.transform = 'scale(1)';
+        youtubeBtn.style.backgroundColor = ''; // Reseta para a cor original
     });
 
-    btn.addEventListener('mousedown', function() {
-        btn.style.transform = 'scale(0.9)';
+    youtubeBtn.addEventListener('mousedown', function() {
+        youtubeBtn.style.transform = 'scale(0.9)';
     });
 
-    btn.addEventListener('mouseup', function() {
-        btn.style.transform = 'scale(1.1)';
+    youtubeBtn.addEventListener('mouseup', function() {
+        youtubeBtn.style.transform = 'scale(1.1)';
     });
+
+    // Efeito de hover no botão do Instagram
+    instagramBtn.addEventListener('mouseover', function() {
+        instagramBtn.style.transform = 'scale(1.1)';
+        instagramBtn.style.backgroundColor = '#e1306c'; // Cor de fundo mais escura
+    });
+
+    instagramBtn.addEventListener('mouseout', function() {
+        instagramBtn.style.transform = 'scale(1)';
+        instagramBtn.style.backgroundColor = ''; // Reseta para a cor original
+    });
+
+    instagramBtn.addEventListener('mousedown', function() {
+        instagramBtn.style.transform = 'scale(0.9)';
+    });
+
+    instagramBtn.addEventListener('mouseup', function() {
+        instagramBtn.style.transform = 'scale(1.1)';
+    });
+
+    // Efeito de hover no botão do Facebook
+    facebookBtn.addEventListener('mouseover', function() {
+        facebookBtn.style.transform = 'scale(1.1)';
+        facebookBtn.style.backgroundColor = '#3b5998'; // Cor de fundo mais escura
+    });
+
+    facebookBtn.addEventListener('mouseout', function() {
+        facebookBtn.style.transform = 'scale(1)';
+        facebookBtn.style.backgroundColor = ''; // Reseta para a cor original
+    });
+
+    facebookBtn.addEventListener('mousedown', function() {
+        facebookBtn.style.transform = 'scale(0.9)';
+    });
+
+    facebookBtn.addEventListener('mouseup', function() {
+        facebookBtn.style.transform = 'scale(1.1)';
+    });
+});
 
     // Efeito de hover na imagem do perfil
     profileImg.addEventListener('mouseover', function() {
@@ -50,7 +89,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     floatImage(); // Inicia a animação
 
-});
 
 
 
