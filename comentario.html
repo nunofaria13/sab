@@ -1,102 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Comentários dos Usuários" />
-    <meta name="author" content="Sines Academia de Basquetebol" />
-    <title>Comentários</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Custom Google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-    <link href="css/comments.css" rel="stylesheet" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Comentários dos Usuários">
+  <meta name="author" content="Sines Academia de Basquetebol">
+  <title>Comentários</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/comments.css" rel="stylesheet">
 </head>
 <body class="d-flex flex-column">
-    <main class="flex-shrink-0">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-            <div class="container px-5">
-                <img src="assets/logo_sab.png" alt="Logo SAB" class="logo-img d-inline-block align-middle" />
-                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Sines Academia de Basquetebol</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                        <li class="nav-item sublinha-hover"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item sublinha-hover"><a class="nav-link" href="equipas.html">Equipas</a></li>
-                        <li class="nav-item sublinha-hover"><a class="nav-link" href="organograma.html">Organograma</a></li>
-                        <li class="nav-item sublinha-hover"><a class="nav-link" href="parceiros.html">Parceiros</a></li>
-                        <li class="nav-item sublinha-hover"><a class="nav-link active" href="comentario.html">Comentário</a></li>
-                        <li class="nav-item sublinha-hover"><a class="nav-link" href="contactos.html">Contactos</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Page content-->
-        <section class="py-5">
-            <div class="container px-5">
-                <!-- Comment form-->
-                <div class="bg-light rounded-4 py-5 px-4 px-md-5 mb-5">
-                    <div class="text-center mb-5">
-                        <div class="feature bg-primary text-white rounded-3 mb-3"><i class="bi bi-chat-dots"></i></div>
-                        <h2 class="fw-bolder">Deixa o teu comentário!</h2>
-                    </div>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-8 col-xl-6">
-                            <form id="commentForm">
-                                <!-- Name input-->
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" id="name" type="text" placeholder="O teu nome" required />
-                                    <label for="name">Nome</label>
-                                    <div class="invalid-feedback" data-sb-feedback="name:required">Tens de colocar um nome.</div>
-                                </div>
-                                <!-- Comment input-->
-                                <div class="form-floating mb-3">
-                                    <textarea class="form-control" id="comment" placeholder="Escreva seu comentário aqui..." style="height: 10rem" required></textarea>
-                                    <label for="comment">Comentário</label>
-                                    <div class="invalid-feedback" data-sb-feedback="comment:required">Tens de colocar um Comentário.</div>
-                                </div>
-                                <!-- Submit Button-->
-                                <div class="d-grid"><button class="btn btn-primary btn-lg" type="submit">Enviar Comentário</button></div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <!-- Comments list-->
-                <div class="bg-light rounded-4 py-5 px-4 px-md-5">
-                    <h2 class="fw-bolder mb-5 text-center">Comentários</h2>
-                    <div id="comentarios" class="row gx-5 justify-content-center">
-                        <!-- Comments will be dynamically inserted here -->
-                    </div>
-                    <div class="text-center mt-4">
-                        <button id="loadMoreButton" class="btn btn-primary">Ver mais comentários</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <!-- Footer-->
-    <footer class="bg-white py-4 mt-auto">
-        <div class="container px-5">
-            <div class="footer d-flex justify-content-between align-items-center flex-column flex-sm-row">
-                <div class="col-auto"><div class="small m-0">Copyright &copy; Sines Academia de Basquetebol 2024</div></div>
-                <div class="col-auto">
-                    <a class="small" href="https://startbootstrap.com/theme/personal">Template</a>
-                </div>
-            </div>
+  <main class="flex-shrink-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+      <div class="container px-5">
+        <img src="assets/logo_sab.png" alt="Logo SAB" class="logo-img d-inline-block align-middle"> <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Sines Academia de Basquetebol</span></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+            <li class="nav-item sublinha-hover">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item sublinha-hover">
+              <a class="nav-link" href="equipas.html">Equipas</a>
+            </li>
+            <li class="nav-item sublinha-hover">
+              <a class="nav-link" href="organograma.html">Organograma</a>
+            </li>
+            <li class="nav-item sublinha-hover">
+              <a class="nav-link" href="parceiros.html">Parceiros</a>
+            </li>
+            <li class="nav-item sublinha-hover">
+              <a class="nav-link active" href="comentario.html">Comentário</a>
+            </li>
+            <li class="nav-item sublinha-hover">
+              <a class="nav-link" href="contactos.html">Contactos</a>
+            </li>
+          </ul>
         </div>
-    </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <!-- Comments JS-->
-    <script src="js/comments.js"></script>
+      </div>
+    </nav>
+    <section class="py-5">
+      <div class="container px-5">
+        <div class="bg-light rounded-4 py-5 px-4 px-md-5 mb-5">
+          <div class="text-center mb-5">
+            <div class="feature bg-primary text-white rounded-3 mb-3"></div>
+            <h2 class="fw-bolder">Deixa o teu comentário!</h2>
+          </div>
+          <div class="row gx-5 justify-content-center">
+            <div class="col-lg-8 col-xl-6">
+              <form id="commentForm" name="commentForm">
+                <div class="form-floating mb-3">
+                  <input class="form-control" id="name" type="text" placeholder="O teu nome" required=""> <label for="name">Nome</label>
+                  <div class="invalid-feedback" data-sb-feedback="name:required">
+                    Tens de colocar um nome.
+                  </div>
+                </div>
+                <div class="form-floating mb-3">
+                  <textarea class="form-control" id="comment" placeholder="Escreva seu comentário aqui..." style="height: 10rem" required=""></textarea> <label for="comment">Comentário</label>
+                  <div class="invalid-feedback" data-sb-feedback="comment:required">
+                    Tens de colocar um Comentário.
+                  </div>
+                </div>
+                <div class="d-grid">
+                  <button class="btn btn-primary btn-lg" type="submit">Enviar Comentário</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="bg-light rounded-4 py-5 px-4 px-md-5">
+          <h2 class="fw-bolder mb-5 text-center">Comentários</h2>
+          <div id="comentarios" class="row gx-5 justify-content-center"></div>
+          <div class="text-center mt-4">
+            <button id="loadMoreButton" class="btn btn-primary">Ver mais comentários</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-white py-4 mt-auto">
+    <div class="container px-5">
+      <div class="footer d-flex justify-content-between align-items-center flex-column flex-sm-row">
+        <div class="col-auto">
+          <div class="small m-0">
+            Copyright © Sines Academia de Basquetebol 2024
+          </div>
+        </div>
+        <div class="col-auto">
+          <a class="small" href="https://startbootstrap.com/theme/personal">Template</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> 
+  <script src="js/scripts.js"></script> 
+  <script src="js/comments.js"></script>
 </body>
 </html>
