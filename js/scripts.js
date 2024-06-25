@@ -3,63 +3,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const instagramBtn = document.getElementById('instagramBtn');
     const facebookBtn = document.getElementById('facebookBtn');
 
-    // Efeito de hover no botão do YouTube
-    youtubeBtn.addEventListener('mouseover', function() {
-        youtubeBtn.style.transform = 'scale(1.1)';
-        youtubeBtn.style.backgroundColor = '#0056b3'; // Cor de fundo mais escura
-    });
+    // Função para adicionar efeito de hover no ícone
+    function addHoverEffect(btn) {
+        const icon = btn.querySelector('i');
+        icon.addEventListener('mouseover', function() {
+            icon.style.transform = 'scale(1.1)';
+        });
 
-    youtubeBtn.addEventListener('mouseout', function() {
-        youtubeBtn.style.transform = 'scale(1)';
-        youtubeBtn.style.backgroundColor = ''; // Reseta para a cor original
-    });
+        icon.addEventListener('mouseout', function() {
+            icon.style.transform = 'scale(1)';
+        });
+    }
 
-    youtubeBtn.addEventListener('mousedown', function() {
-        youtubeBtn.style.transform = 'scale(0.9)';
-    });
-
-    youtubeBtn.addEventListener('mouseup', function() {
-        youtubeBtn.style.transform = 'scale(1.1)';
-    });
-
-    // Efeito de hover no botão do Instagram
-    instagramBtn.addEventListener('mouseover', function() {
-        instagramBtn.style.transform = 'scale(1.1)';
-        instagramBtn.style.backgroundColor = '#e1306c'; // Cor de fundo mais escura
-    });
-
-    instagramBtn.addEventListener('mouseout', function() {
-        instagramBtn.style.transform = 'scale(1)';
-        instagramBtn.style.backgroundColor = ''; // Reseta para a cor original
-    });
-
-    instagramBtn.addEventListener('mousedown', function() {
-        instagramBtn.style.transform = 'scale(0.9)';
-    });
-
-    instagramBtn.addEventListener('mouseup', function() {
-        instagramBtn.style.transform = 'scale(1.1)';
-    });
-
-    // Efeito de hover no botão do Facebook
-    facebookBtn.addEventListener('mouseover', function() {
-        facebookBtn.style.transform = 'scale(1.1)';
-        facebookBtn.style.backgroundColor = '#3b5998'; // Cor de fundo mais escura
-    });
-
-    facebookBtn.addEventListener('mouseout', function() {
-        facebookBtn.style.transform = 'scale(1)';
-        facebookBtn.style.backgroundColor = ''; // Reseta para a cor original
-    });
-
-    facebookBtn.addEventListener('mousedown', function() {
-        facebookBtn.style.transform = 'scale(0.9)';
-    });
-
-    facebookBtn.addEventListener('mouseup', function() {
-        facebookBtn.style.transform = 'scale(1.1)';
-    });
+    // Aplicar o efeito de hover para cada botão
+    addHoverEffect(youtubeBtn);
+    addHoverEffect(instagramBtn);
+    addHoverEffect(facebookBtn);
 });
+
 
     // Efeito de hover na imagem do perfil
     profileImg.addEventListener('mouseover', function() {
