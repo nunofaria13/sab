@@ -11874,21 +11874,22 @@ html {
   transition: all 0.3s ease;
 }
 
-/* Adicionar um subtexto para os links */
+/* Remover sublinhado dos links e ajustar tamanho do texto */
+a.link-card {
+  text-decoration: none; /* Remover sublinhado */
+}
+
+/* Texto adicional para hover */
 .click-info {
-  font-size: 0.9rem;
+  font-size: 0.85rem; /* Diminuir o tamanho do texto */
   color: #6c757d;
   margin-top: 10px;
 }
 
 .click-info:hover {
-  color: #0056b3;
+  color: #0056b3; /* Muda de cor ao passar o cursor */
 }
 
-/* Remover sublinhado dos links */
-a {
-  text-decoration: none;
-}
 
 
 
