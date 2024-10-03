@@ -11866,5 +11866,22 @@ html {
   outline: none;
 }
 
+    /* Adicionar efeito de hover nas imagens */
+    .partner-logo:hover {
+      filter: brightness(0.8); /* Diminui a luminosidade ao passar o cursor */
+      cursor: pointer;
+    }
+
+    /* Adicionar um subtexto para os links */
+    .click-info {
+      font-size: 0.9rem;
+      color: #6c757d;
+      margin-top: 10px;
+    }
+
+    .click-info:hover {
+      color: #0056b3;
+    }
+
 
 
