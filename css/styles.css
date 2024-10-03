@@ -11866,22 +11866,30 @@ html {
   outline: none;
 }
 
-    /* Adicionar efeito de hover nas imagens */
-    .partner-logo:hover {
-      filter: brightness(0.8); /* Diminui a luminosidade ao passar o cursor */
-      cursor: pointer;
-    }
+/* Efeito de hover para todo o card */
+.partner-card:hover {
+  filter: brightness(0.9); /* Efeito visual quando o cursor está sobre o card */
+  cursor: pointer;
+  transform: scale(1.02); /* Ligeiro aumento no tamanho para dar destaque */
+  transition: all 0.3s ease;
+}
 
-    /* Adicionar um subtexto para os links */
-    .click-info {
-      font-size: 0.9rem;
-      color: #6c757d;
-      margin-top: 10px;
-    }
+/* Adicionar um subtexto para os links */
+.click-info {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-top: 10px;
+}
 
-    .click-info:hover {
-      color: #0056b3;
-    }
+.click-info:hover {
+  color: #0056b3;
+}
+
+/* Remover sublinhado dos links */
+a {
+  text-decoration: none;
+}
+
 
 
 
