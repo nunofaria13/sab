@@ -11890,6 +11890,14 @@ a.link-card {
   color: #0056b3; /* Muda de cor ao passar o cursor */
 }
 
+/* Estilos específicos para a logo do primeiro cartão */
+.logo-predimed {
+  max-height: 300px; /* Definir um tamanho máximo para a altura */
+  object-fit: contain; /* Garante que a imagem se ajusta sem ser cortada */
+  margin: 0 auto; /* Centralizar a imagem */
+}
+
+
 
 
 
