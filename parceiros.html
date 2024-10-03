@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet"> <!-- Ficheiro CSS externo -->
 </head>
 <body class="d-flex flex-column h-100 bg-light">
   <main class="flex-shrink-0">
@@ -41,32 +41,34 @@
     </nav>
     <div class="container px-5 my-5">
       <div class="text-center mb-5">
-        <h1 class="display-5 fw-bolder mb-0"><span class="d-inline">O nossos patrocinadores</span></h1>
+        <h1 class="display-5 fw-bolder mb-0"><span class="d-inline">Os nossos patrocinadores</span></h1>
       </div>
       <div class="row gx-5 justify-content-center">
         <div class="col-lg-11 col-xl-9 col-xxl-8">
 
-          <div class="card shadow border-0 rounded-4 mb-5 d-flex flex-column">
-            <div class="card-body p-5 text-center d-flex flex-column">
-              <a href="https://predimed.pt/vascodagama" target="_blank">
-                <img src="assets/predimed.png" alt="Predimed Vasco da Gama" class="img-fluid mb-4 partner-logo" style="max-height: 500px;">
-              </a>
-              <h2 class="text-primary fw-bolder mb-0">Predimed Vasco da Gama</h2>
-              <p class="text-muted">Imobiliária</p>
-              <p class="click-info">Clica para mais info</p> <!-- Texto adicional -->
+          <!-- Card para Predimed Vasco da Gama -->
+          <a href="https://predimed.pt/vascodagama" target="_blank">
+            <div class="card shadow border-0 rounded-4 mb-5 d-flex flex-column partner-card">
+              <div class="card-body p-5 text-center d-flex flex-column">
+                <img src="assets/predimed.png" alt="Predimed Vasco da Gama" class="img-fluid mb-4" style="max-height: 500px;">
+                <h2 class="text-primary fw-bolder mb-0">Predimed Vasco da Gama</h2>
+                <p class="text-muted">Imobiliária</p>
+                <p class="click-info">Clica para mais info</p> <!-- Texto adicional -->
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div class="card shadow border-0 rounded-4 mb-5">
-            <div class="card-body p-5 text-center d-flex flex-column">
-              <a href="https://www.bomremedio.pt" target="_blank">
-                <img src="assets/bomremediocafe.png" alt="Bom Remédio Café" class="img-fluid mb-4 partner-logo" style="max-height: 500px;">
-              </a>
-              <h2 class="text-primary fw-bolder mb-0">Bom Remédio Café</h2>
-              <p class="text-muted">Restaurante</p>
-              <p class="click-info">Clica para mais info</p> <!-- Texto adicional -->
+          <!-- Card para Bom Remédio Café -->
+          <a href="https://www.bomremedio.pt" target="_blank">
+            <div class="card shadow border-0 rounded-4 mb-5 d-flex flex-column partner-card">
+              <div class="card-body p-5 text-center d-flex flex-column">
+                <img src="assets/bomremediocafe.png" alt="Bom Remédio Café" class="img-fluid mb-4" style="max-height: 500px;">
+                <h2 class="text-primary fw-bolder mb-0">Bom Remédio Café</h2>
+                <p class="text-muted">Restaurante</p>
+                <p class="click-info">Clica para mais info</p> <!-- Texto adicional -->
+              </div>
             </div>
-          </div>
+          </a>
 
         </div>
       </div>
