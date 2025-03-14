@@ -29,30 +29,30 @@
       padding: 0;
     }
 
+    /* A imagem vai cobrir toda a área disponível no card */
     .card img {
       object-fit: cover;
-      height: 100%;
-      width: 50%; /* A imagem ocupa 50% do card */
-      object-position: center center; /* Centraliza a imagem */
+      height: 100%; /* A imagem ocupa toda a altura do card */
+      width: 50%; /* A imagem ocupa 50% da largura */
     }
 
+    /* O texto ocupa a outra metade */
     .p-5 {
-      width: 50%; /* O texto ocupa a outra metade */
+      width: 50%;
       padding: 20px;
     }
 
-    /* Responsividade para telas menores */
+    /* Responsividade para telas menores (mobile) */
     @media (max-width: 768px) {
       .card {
-        height: auto; /* O card fica flexível */
-        flex-direction: column; /* A imagem vai para baixo, o texto para cima */
+        height: auto; /* O card fica flexível no mobile */
+        flex-direction: column; /* A imagem vai para baixo e o texto para cima */
       }
 
       .card img {
-        width: 100%; /* A imagem ocupa toda a largura */
-        height: 250px; /* Ajuste da altura da imagem */
-        object-position: bottom center; /* Coloca a imagem na parte inferior do card */
-        object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+        width: 100%; /* A imagem ocupa 100% da largura */
+        height: 250px; /* Ajuste de altura para a imagem no mobile */
+        object-position: top center; /* Garantir que a imagem fique no topo */
       }
 
       .p-5 {
@@ -61,11 +61,10 @@
       }
     }
 
-    /* Para garantir que o texto não ocupe mais espaço que a imagem no mobile */
+    /* Para telas muito pequenas, ajustando a altura da imagem */
     @media (max-width: 576px) {
       .card img {
-        height: 250px; /* Ajuste para a altura da imagem no mobile */
-        object-position: center bottom; /* Garantir que a imagem se posicione bem */
+        height: 200px; /* Ajuste para uma altura menor no mobile */
       }
     }
   </style>
