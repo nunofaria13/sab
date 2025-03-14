@@ -14,23 +14,43 @@
   <link href="css/styles.css" rel="stylesheet">
   <style>
     .card {
-      height: 320px; /* Manter uma altura razoável */
+      height: 320px; /* Altura fixa para os cards */
       overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
     }
     .card-body {
       display: flex;
-      align-items: center;
+      flex-direction: row;
       padding: 0;
+      width: 100%;
     }
     .card img {
       object-fit: cover;
       object-position: center center; /* Foca no centro da imagem */
-      height: 100%; /* A imagem vai preencher a altura do card */
-      width: 50%; /* A largura será 50% do card */
+      height: 100%;
+      width: 50%; /* A imagem ocupa metade do card */
     }
     .p-5 {
-      width: 50%; /* O texto ocupa a metade restante do card */
-      padding: 10px 20px; /* Menos padding no texto para mais espaço para a imagem */
+      width: 50%; /* O texto ocupa a outra metade */
+      padding: 10px 20px;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .card {
+        height: auto; /* Deixa o card flexível em dispositivos menores */
+        flex-direction: column; /* Alinha o texto em cima e a imagem em baixo */
+      }
+      .card img {
+        width: 100%; /* A imagem ocupa toda a largura */
+        height: 200px; /* Limita a altura da imagem para evitar que fique muito grande */
+      }
+      .p-5 {
+        width: 100%; /* O texto ocupa toda a largura do card */
+        padding: 15px; /* Ajusta o padding para dispositivos móveis */
+      }
     }
   </style>
 </head>
