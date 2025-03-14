@@ -13,45 +13,50 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
   <style>
+    /* Estilo geral para os cards */
     .card {
-      height: 320px; /* Altura fixa para os cards */
+      height: 320px;
       overflow: hidden;
       display: flex;
       flex-direction: row;
-      align-items: center;
-      margin-bottom: 1.5rem; /* Espaçamento entre os cards */
+      margin-bottom: 1.5rem;
     }
+
     .card-body {
       display: flex;
       flex-direction: row;
-      padding: 0;
       width: 100%;
-    }
-    .card img {
-      object-fit: cover;
-      object-position: center center; /* Foca no centro da imagem */
-      height: 100%;
-      width: 50%; /* A imagem ocupa metade do card */
-    }
-    .p-5 {
-      width: 50%; /* O texto ocupa a outra metade */
-      padding: 10px 20px;
+      padding: 0;
     }
 
-    /* Responsividade */
+    .card img {
+      object-fit: cover;
+      height: 100%;
+      width: 50%; /* A imagem ocupa 50% do card */
+      object-position: center center; /* Centraliza a imagem */
+    }
+
+    .p-5 {
+      width: 50%; /* O texto ocupa a outra metade */
+      padding: 20px;
+    }
+
+    /* Responsividade para telas menores */
     @media (max-width: 768px) {
       .card {
-        height: auto; /* Deixa o card flexível em dispositivos menores */
-        flex-direction: column; /* Alinha o texto em cima e a imagem em baixo */
+        height: auto; /* O card fica flexível */
+        flex-direction: column; /* A imagem vai para baixo, o texto para cima */
       }
+
       .card img {
         width: 100%; /* A imagem ocupa toda a largura */
-        height: 200px; /* Limita a altura da imagem para evitar que fique muito grande */
-        object-position: bottom center; /* Coloca a imagem na parte de baixo */
+        height: 200px; /* Limita a altura da imagem */
+        object-position: bottom center; /* Coloca a imagem na parte inferior do card */
       }
+
       .p-5 {
         width: 100%; /* O texto ocupa toda a largura do card */
-        padding: 15px; /* Ajusta o padding para dispositivos móveis */
+        padding: 15px; /* Ajuste de padding para o texto em telas menores */
       }
     }
   </style>
@@ -60,7 +65,8 @@
   <main class="flex-shrink-0">
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
       <div class="container px-5">
-        <img src="assets/logo_sab.png" alt="Logo SAB" class="logo-img d-inline-block align-middle"> <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Sines Academia de Basquetebol</span></a>
+        <img src="assets/logo_sab.png" alt="Logo SAB" class="logo-img d-inline-block align-middle">
+        <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Sines Academia de Basquetebol</span></a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
             <li class="nav-item sublinha-hover">
@@ -164,14 +170,14 @@
 
   <footer class="bg-white py-4 mt-auto">
     <div class="container px-5">
-        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-            <div class="col-auto">
-                <div class="small m-0">Copyright &copy; Sines Academia de Basquetebol 2025</div>
-            </div>
+      <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+        <div class="col-auto">
+          <div class="small m-0">Copyright &copy; Sines Academia de Basquetebol 2025</div>
+        </div>
         <div class="small text-muted" style="font-size: 0.75rem;">
-        Desenvolvido por Nuno Faria
+          Desenvolvido por Nuno Faria
         </div>
-        </div>
+      </div>
     </div>
   </footer>
 
