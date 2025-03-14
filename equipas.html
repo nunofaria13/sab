@@ -45,12 +45,16 @@
         width: 100%;
       }
     
+
       .card img {
-        width: 100%;
-        height: 250px; /* Mantém altura estável */
-        object-fit: cover;
-        object-position: top; /* Foca a parte superior da imagem no mobile */
-      }
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center; /* Garante que a imagem se encaixe corretamente */
+      display: block; /* Remove espaços extras */
+    }
+
+      
     }
 
   </style>
