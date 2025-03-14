@@ -13,58 +13,41 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
   <style>
-    /* Estilo geral para os cards */
+    /* Ajuste para o card */
     .card {
-      height: 320px;
-      overflow: hidden;
       display: flex;
       flex-direction: row;
-      margin-bottom: 1.5rem;
+      height: 320px; /* Altura fixa para manter as proporções */
+      overflow: hidden; /* Evita cortes indesejados */
     }
-
-    .card-body {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      padding: 0;
-    }
-
-    /* A imagem vai cobrir toda a área disponível no card */
-    .card img {
-      object-fit: cover;
-      height: 100%; /* A imagem ocupa toda a altura do card */
-      width: 50%; /* A imagem ocupa 50% da largura */
-    }
-
-    /* O texto ocupa a outra metade */
+    
+    /* Área de texto */
     .p-5 {
       width: 50%;
       padding: 20px;
     }
-
-    /* Responsividade para telas menores (mobile) */
+    
+    /* Imagem dentro do card */
+    .card img {
+      width: 50%;
+      height: 100%;
+      object-fit: cover; /* Mantém a proporção sem distorcer */
+    }
+    
+    /* Responsividade para telemóveis */
     @media (max-width: 768px) {
       .card {
-        height: auto; /* O card fica flexível no mobile */
-        flex-direction: column; /* A imagem vai para baixo e o texto para cima */
+        flex-direction: column; /* Empilha os elementos no mobile */
+        height: auto; /* Altura automática para evitar cortes */
       }
-
-      .card img {
-        width: 100%; /* A imagem ocupa 100% da largura */
-        height: 250px; /* Ajuste de altura para a imagem no mobile */
-        object-position: top center; /* Garantir que a imagem fique no topo */
-      }
-
+    
       .p-5 {
-        width: 100%; /* O texto ocupa toda a largura do card */
-        padding: 15px; /* Ajuste de padding para o texto em telas menores */
+        width: 100%;
       }
-    }
-
-    /* Para telas muito pequenas, ajustando a altura da imagem */
-    @media (max-width: 576px) {
+    
       .card img {
-        height: 200px; /* Ajuste para uma altura menor no mobile */
+        width: 100%; /* Ocupa toda a largura */
+        height: 250px; /* Altura fixa para evitar cortes */
       }
     }
   </style>
