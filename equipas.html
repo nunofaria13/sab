@@ -14,20 +14,23 @@
   <link href="css/styles.css" rel="stylesheet">
   <style>
     .card {
-      height: 400px; /* Altura do card aumentada para evitar cortar a imagem */
+      height: 350px; /* Manter uma altura razoável */
       overflow: hidden;
     }
     .card-body {
       display: flex;
       align-items: center;
+      padding: 0;
     }
     .card img {
-      object-fit: cover; /* Garantir que a imagem preenche o card */
+      object-fit: cover;
+      object-position: center center; /* Foca no centro da imagem */
       height: 100%; /* A imagem vai preencher a altura do card */
       width: 50%; /* A largura será 50% do card */
     }
     .p-5 {
       width: 50%; /* O texto ocupa a metade restante do card */
+      padding: 10px 20px; /* Menos padding no texto para mais espaço para a imagem */
     }
   </style>
 </head>
@@ -68,7 +71,7 @@
 
             <!-- Card Mini 8/10 -->
             <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-              <div class="card-body p-0">
+              <div class="card-body">
                 <div class="p-5">
                   <h2 class="fw-bolder">Mini 8/10</h2>
                   <p>Nascidos em 2015, 2016, 2017 e 2018</p>
@@ -85,7 +88,7 @@
 
             <!-- Card Mini 12 -->
             <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-              <div class="card-body p-0">
+              <div class="card-body">
                 <div class="p-5">
                   <h2 class="fw-bolder">Mini 12</h2>
                   <p>Nascidos em 2013 e 2014</p>
@@ -101,7 +104,7 @@
 
             <!-- Card Sub 16 Masculino -->
             <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-              <div class="card-body p-0">
+              <div class="card-body">
                 <div class="p-5">
                   <h2 class="fw-bolder">Sub 16 Masculino</h2>
                   <p>Nascidos em 2009 e 2010</p>
@@ -117,7 +120,7 @@
 
             <!-- Card Sub 18 Masculino -->
             <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-              <div class="card-body p-0">
+              <div class="card-body">
                 <div class="p-5">
                   <h2 class="fw-bolder">Sub 18 Masculino</h2>
                   <p>Nascidos em 2007 e 2008</p>
