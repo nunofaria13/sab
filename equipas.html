@@ -13,32 +13,32 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
   <style>
-    /* Ajuste para o card */
     .card {
       display: flex;
       flex-direction: row;
-      height: 320px; /* Altura fixa para manter as proporções */
-      overflow: hidden; /* Evita cortes indesejados */
+      height: 320px; /* Mantém altura fixa */
+      overflow: hidden; /* Impede margens extras */
     }
     
-    /* Área de texto */
     .p-5 {
       width: 50%;
       padding: 20px;
     }
     
-    /* Imagem dentro do card */
+    /* Ajuste final da imagem */
     .card img {
-      width: 50%;
+      width: 100%;
       height: 100%;
-      object-fit: cover; /* Mantém a proporção sem distorcer */
+      object-fit: cover;
+      object-position: center; /* Ajusta o foco da imagem */
+      flex-shrink: 0; /* Evita que a imagem diminua */
     }
     
     /* Responsividade para telemóveis */
     @media (max-width: 768px) {
       .card {
-        flex-direction: column; /* Empilha os elementos no mobile */
-        height: auto; /* Altura automática para evitar cortes */
+        flex-direction: column;
+        height: auto;
       }
     
       .p-5 {
@@ -47,11 +47,12 @@
     
       .card img {
         width: 100%;
-        height: 100%;
+        height: 250px; /* Mantém altura estável */
         object-fit: cover;
+        object-position: top; /* Foca a parte superior da imagem no mobile */
       }
-
     }
+
   </style>
 </head>
 <body class="d-flex flex-column h-100 bg-light">
