@@ -50,13 +50,21 @@
 
       .card img {
         width: 100%; /* A imagem ocupa toda a largura */
-        height: 200px; /* Limita a altura da imagem */
+        height: 250px; /* Ajuste da altura da imagem */
         object-position: bottom center; /* Coloca a imagem na parte inferior do card */
       }
 
       .p-5 {
         width: 100%; /* O texto ocupa toda a largura do card */
         padding: 15px; /* Ajuste de padding para o texto em telas menores */
+      }
+    }
+
+    /* Para garantir que o texto não ocupe mais espaço que a imagem no mobile */
+    @media (max-width: 576px) {
+      .card img {
+        height: 250px; /* Ajuste para a altura da imagem no mobile */
+        object-position: center bottom; /* Garantir que a imagem se posicione bem */
       }
     }
   </style>
