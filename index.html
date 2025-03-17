@@ -24,7 +24,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-ac4mf8psrNxKcYeU1/tF2ndRCPjHeUlgY3HMrnM9vcdUs5yN3mP9U4eEV0lLJ9IS42RYlXYL2QvWv9JsyI4KA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        /* Responsividade da barra de navegação */
+        .navbar-brand {
+            font-size: 1.2rem;
+        }
 
+        .logo-img {
+            max-width: 35px; /* Diminui o tamanho do logo no mobile */
+            margin-right: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-nav {
+                font-size: 0.9rem; /* Reduz o tamanho da fonte no mobile */
+            }
+            .navbar-toggler-icon {
+                width: 30px; /* Ajuste o tamanho do ícone do menu */
+            }
+            .navbar-collapse {
+                text-align: center; /* Centraliza o menu no mobile */
+            }
+        }
+
+        /* Ajustes para a imagem "todos" */
+        #profileImg {
+            max-width: 100%; /* Garante que a imagem ocupe toda a largura do dispositivo */
+            height: auto; /* Ajusta a altura proporcionalmente */
+        }
+    </style>
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -44,9 +73,8 @@
                         <li class="nav-item sublinha-hover"><a class="nav-link active" href="index.html">Home</a></li>
                         <li class="nav-item sublinha-hover"><a class="nav-link" href="equipas.html">Equipas</a></li>
                         <li class="nav-item sublinha-hover"><a class="nav-link" href="organograma.html">Organograma</a></li>
-                        <li class="nav-item sublinha-hover"> <a class="nav-link" href="parceiros.html">Parceiros</a></li>
+                        <li class="nav-item sublinha-hover"><a class="nav-link" href="parceiros.html">Parceiros</a></li>
                         <li class="nav-item sublinha-hover"><a class="nav-link" href="contactos.html">Contactos</a></li>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -68,10 +96,12 @@
                     <div class="col-xxl-7">
                         <!-- Header profile picture-->
                         <div class="d-flex justify-content-center mt-5 mt-xxl-0">
-
                             <img class="profile-img" id="profileImg" src="assets/todos.jpg"
-                                alt="Foto do clube" width="700" />
-                            <div class="dots-1">                           
+                                alt="Foto do clube" />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
         <!-- About Section-->
         <section class="bg-light py-2">
@@ -81,33 +111,18 @@
                         <div class="text-center my-5">
                             <img class="img-fluid mb-4" id="floatingImg" src="assets/logo_sab.png"
                                 alt="Logo Sines Academia de Basquetebol" width="280" />
-                            <h1 class="display fw-bolder mb-4"><span class="d-inline">Sobre o clube</span></h2>
-                                <p class="lead fw-light mb-4 justify">Sines Academia de Basquetebol, núcleo de
-                                    basquetebol do Sines Surf Clube,
-                                    é uma instituição que se destaca pela sua abordagem focada na formação integral dos
-                                    seus atletas. Dividindo
-                                    o percurso formativo em várias etapas, o SAB visa não só desenvolver habilidades
-                                    desportivas, mas também moldar
-                                    futuros adultos e cidadãos responsáveis. Pretendemos ser uma referência local em
-                                    termos de oferta desportiva,
-                                    priorizando a qualidade da formação oferecida. A nossa ambição é figurar entre as
-                                    melhores organizações desportivas de formação, proporcionando aos nossos atletas uma
-                                    experiência enriquecedora e transformadora em níveis pessoal e social.
-                                    A persistência pelo sucesso desportivo não nos faz perder de vista os nossos valores
-                                    fundamentais: respeito,
-                                    compromisso, humildade, solidariedade, companheirismo, ética desportiva e fair-play.
-                                    Mantemos uma postura
-                                    de procura pelo máximo desempenho, mas sempre respeitando estes princípios que nos
-                                    definem.</p>
+                            <h1 class="display fw-bolder mb-4"><span class="d-inline">Sobre o clube</span></h1>
+                            <p class="lead fw-light mb-4 justify">Sines Academia de Basquetebol, núcleo de
+                                    basquetebol do Sines Surf Clube, é uma instituição que se destaca pela sua abordagem focada na formação integral dos seus atletas. Dividindo o percurso formativo em várias etapas, o SAB visa não só desenvolver habilidades desportivas, mas também moldar futuros adultos e cidadãos responsáveis. Pretendemos ser uma referência local em termos de oferta desportiva, priorizando a qualidade da formação oferecida. A nossa ambição é figurar entre as melhores organizações desportivas de formação, proporcionando aos nossos atletas uma experiência enriquecedora e transformadora em níveis pessoal e social.</p>
 
-                                <div class="d-flex justify-content-center fs-2 gap-4">
-                                    <a href="https://www.youtube.com/@sinesacademiabasquetebol" target="_blank"
-                                        id="preInscricaoBtn"><i class="bi bi-youtube"></i></a>
-                                    <a href="https://www.instagram.com/sab.equipa/" target="_blank"
-                                        id="preInscricaoBtn"><i class="bi bi-instagram"></i></a>
-                                    <a href="https://www.facebook.com/sines.academia.basquetebol/" target="_blank"
-                                        id="preInscricaoBtn"><i class="bi bi-facebook"></i></a>
-                                </div>
+                            <div class="d-flex justify-content-center fs-2 gap-4">
+                                <a href="https://www.youtube.com/@sinesacademiabasquetebol" target="_blank"
+                                    id="preInscricaoBtn"><i class="bi bi-youtube"></i></a>
+                                <a href="https://www.instagram.com/sab.equipa/" target="_blank"
+                                    id="preInscricaoBtn"><i class="bi bi-instagram"></i></a>
+                                <a href="https://www.facebook.com/sines.academia.basquetebol/" target="_blank"
+                                    id="preInscricaoBtn"><i class="bi bi-facebook"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -121,9 +136,9 @@
                 <div class="col-auto">
                     <div class="small m-0">Copyright &copy; Sines Academia de Basquetebol 2025</div>
                 </div>
-            <div class="small text-muted" style="font-size: 0.75rem;">
-            Desenvolvido por Nuno Faria
-            </div>
+                <div class="small text-muted" style="font-size: 0.75rem;">
+                    Desenvolvido por Nuno Faria
+                </div>
             </div>
         </div>
     </footer>
