@@ -59,48 +59,59 @@
       .navbar-brand {
         font-size: 1.2rem; /* Reduz o tamanho do texto */
       }
+
+      .navbar-brand {
+      font-size: 1rem; /* Reduz o tamanho da fonte no mobile */
+      }
+      .logo-img {
+      max-width: 35px; /* Diminui o tamanho do logo no mobile */
+      margin-right: 5px; /* Reduz espaço lateral */
+      }
     }
+      
   </style>
 </head>
 <body class="d-flex flex-column h-100 bg-light">
   <main class="flex-shrink-0">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-      <div class="container px-5 d-flex align-items-center justify-content-between">
-        <!-- Logo e Nome -->
-        <div class="d-flex align-items-center">
-          <img src="assets/logo_sab.png" alt="Logo SAB" class="logo-img me-2">
-          <a class="navbar-brand mb-0 fw-bolder text-primary" href="index.html" style="white-space: nowrap;">
-            Sines Academia de Basquetebol
-          </a>
-        </div>
-    
-        <!-- Botão do menu no mobile -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-            <li class="nav-item sublinha-hover">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item sublinha-hover">
-              <a class="nav-link active" href="equipas.html">Equipas</a>
-            </li>
-            <li class="nav-item sublinha-hover">
-              <a class="nav-link" href="organograma.html">Organograma</a>
-            </li>
-            <li class="nav-item sublinha-hover">
-              <a class="nav-link" href="parceiros.html">Parceiros</a>
-            </li>
-            <li class="nav-item sublinha-hover">
-              <a class="nav-link" href="contactos.html">Contactos</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container px-5 d-flex align-items-center justify-content-between">
+          <!-- Logo e Nome -->
+          <div class="d-flex align-items-center">
+            <img src="assets/logo_sab.png" alt="Logo SAB" class="logo-img me-2" style="max-width: 40px;">
+            <a class="navbar-brand mb-0 fw-bolder text-primary d-inline-block text-truncate"
+               href="index.html" 
+               style="font-size: 1.2rem; white-space: nowrap;">
+              Sines Academia de Basquetebol
+            </a>
+          </div>
+      
+          <!-- Botão do menu no mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+              <li class="nav-item sublinha-hover">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item sublinha-hover">
+                <a class="nav-link active" href="equipas.html">Equipas</a>
+              </li>
+              <li class="nav-item sublinha-hover">
+                <a class="nav-link" href="organograma.html">Organograma</a>
+              </li>
+              <li class="nav-item sublinha-hover">
+                <a class="nav-link" href="parceiros.html">Parceiros</a>
+              </li>
+              <li class="nav-item sublinha-hover">
+                <a class="nav-link" href="contactos.html">Contactos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
     <section class="py-5">
       <div class="container px-5 mb-5">
