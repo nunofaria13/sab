@@ -29,13 +29,15 @@
       
       /* Ajuste final da imagem */
       .card img {
-        width: 50%;
-        height: 100%;
-        object-fit: cover; /* Mantém proporções sem distorcer */
-        object-position: center; /* Centraliza a imagem */
-        display: block; /* Remove espaços extras */
-        flex-shrink: 0; /* Garante que a imagem não diminua */
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Faz a imagem cobrir todo o espaço */
+      object-position: center; /* Mantém o foco central */
+      flex-grow: 1; /* Faz a imagem expandir e preencher totalmente */
       }
+
+
+    
       
       /* Responsividade para telemóveis */
       @media (max-width: 768px) {
