@@ -15,16 +15,16 @@
   <style>
       /* Configuração do card */
     .card {
-    display: flex;
-    flex-direction: row;
-    height: 320px; /* Mantém altura fixa */
-    overflow: hidden; /* Evita cortes indesejados */
+      display: flex;
+      flex-direction: row;
+      height: 320px; /* Mantém altura fixa */
+      overflow: hidden; /* Evita cortes indesejados */
     }
   
     /* Área de texto */
     .p-5 {
-    width: 50%;
-    padding: 20px;
+      width: 50%;
+      padding: 20px;
     }
   
     /* Ajuste correto da imagem */
@@ -37,26 +37,29 @@
       border-radius: 15px; /* Arredonda os cantos da imagem */
     }
 
-
     /* Responsividade para telemóveis */
     @media (max-width: 768px) {
-    .card {
-      flex-direction: column; /* Empilha os elementos no mobile */
-      height: auto;
-    }
-  
-    .p-5 {
-      width: 100%;
-    }
-  
-    .card img {
-      width: 100%; /* Ocupa toda a largura */
-      height: 250px; /* Mantém altura fixa */
-      object-fit: cover; /* Garante que a imagem não distorça */
-      object-position: center; /* Mantém o foco correto */
-    }
-  }
+      .card {
+        flex-direction: column; /* Empilha os elementos no mobile */
+        height: auto;
+      }
 
+      .p-5 {
+        width: 100%;
+      }
+
+      .card img {
+        width: 100%; /* Ocupa toda a largura */
+        height: 250px; /* Mantém altura fixa */
+        object-fit: cover; /* Garante que a imagem não distorça */
+        object-position: center; /* Mantém o foco correto */
+      }
+
+      /* Ajuste do header no mobile */
+      .navbar-brand {
+        font-size: 1.2rem; /* Reduz o tamanho do texto */
+      }
+    }
   </style>
 </head>
 <body class="d-flex flex-column h-100 bg-light">
@@ -64,7 +67,15 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
       <div class="container px-5">
         <img src="assets/logo_sab.png" alt="Logo SAB" class="logo-img d-inline-block align-middle">
-        <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Sines Academia de Basquetebol</span></a>
+        <a class="navbar-brand" href="index.html">
+          <span class="fw-bolder text-primary">Sines Academia de Basquetebol</span>
+        </a>
+        
+        <!-- Botão do menu no mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
             <li class="nav-item sublinha-hover">
@@ -166,20 +177,6 @@
     </section>
   </main>
 
-  <footer class="bg-white py-4 mt-auto">
-    <div class="container px-5">
-      <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-        <div class="col-auto">
-          <div class="small m-0">Copyright &copy; Sines Academia de Basquetebol 2025</div>
-        </div>
-        <div class="small text-muted" style="font-size: 0.75rem;">
-          Desenvolvido por Nuno Faria
-        </div>
-      </div>
-    </div>
-  </footer>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/scripts.js"></script>
 </body>
 </html>
