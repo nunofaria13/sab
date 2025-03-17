@@ -13,49 +13,48 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
   <style>
-    .card {
-      display: flex;
-      flex-direction: row;
-      height: 320px; /* Mantém altura fixa */
-      overflow: hidden; /* Impede margens extras */
-    }
-    
-    .p-5 {
-      width: 50%;
-      padding: 20px;
-    }
-    
-    /* Ajuste final da imagem */
-    .card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center; /* Ajusta o foco da imagem */
-      flex-shrink: 0; /* Evita que a imagem diminua */
-    }
-    
-    /* Responsividade para telemóveis */
-    @media (max-width: 768px) {
+          /* Configuração do card */
       .card {
-        flex-direction: column;
-        height: auto;
+        display: flex;
+        flex-direction: row;
+        height: 320px; /* Mantém altura fixa */
+        overflow: hidden; /* Evita cortes indesejados */
       }
-    
-      .p-5 {
-        width: 100%;
-      }
-    
-
-      .card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center; /* Garante que a imagem se encaixe corretamente */
-      display: block; /* Remove espaços extras */
-    }
-
       
-    }
+      /* Área de texto */
+      .p-5 {
+        width: 50%;
+        padding: 20px;
+      }
+      
+      /* Ajuste final da imagem */
+      .card img {
+        width: 50%;
+        height: 100%;
+        object-fit: cover; /* Mantém proporções sem distorcer */
+        object-position: center; /* Centraliza a imagem */
+        display: block; /* Remove espaços extras */
+        flex-shrink: 0; /* Garante que a imagem não diminua */
+      }
+      
+      /* Responsividade para telemóveis */
+      @media (max-width: 768px) {
+        .card {
+          flex-direction: column; /* Empilha os elementos no mobile */
+          height: auto;
+        }
+      
+        .p-5 {
+          width: 100%;
+        }
+      
+        .card img {
+          width: 100%; /* Ocupa toda a largura */
+          height: 250px; /* Mantém altura fixa */
+          object-fit: cover; /* Garante que a imagem não distorça */
+          object-position: center; /* Mantém o foco correto */
+        }
+      }
 
   </style>
 </head>
