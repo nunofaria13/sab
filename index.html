@@ -36,6 +36,11 @@
             margin-right: 5px;
         }
 
+        /* Ajustes para o título no header */
+        .display-3 {
+            font-size: 3rem;
+        }
+
         @media (max-width: 768px) {
             .navbar-nav {
                 font-size: 0.9rem; /* Reduz o tamanho da fonte no mobile */
@@ -45,6 +50,16 @@
             }
             .navbar-collapse {
                 text-align: center; /* Centraliza o menu no mobile */
+            }
+            .display-3 {
+                font-size: 2.2rem; /* Ajuste no título para telas pequenas */
+            }
+            .fs-3 {
+                font-size: 1rem; /* Ajuste da fonte da descrição abaixo do título */
+            }
+            #profileImg {
+                max-width: 100%; /* Garante que a imagem ocupe toda a largura do dispositivo */
+                height: auto; /* Ajusta a altura proporcionalmente */
             }
         }
 
